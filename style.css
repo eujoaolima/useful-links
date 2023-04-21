@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
+
+:root {
+    --bg-color-lightBlue: #0097b2;
+    --bg-color-darkBlue: #004aad;
+    --bg-color-darkBlue2: #003375;
+    --bg-color-pink: #ff66c4;
+    --bg-color-gray: #eeeeee;
+}
+
+::-webkit-scrollbar {
+    height: 7px;
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--bg-color-lightBlue);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-color-gray);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--bg-color-darkBlue);
+}
+
+#banner-uppage {
+    display: block;
+    justify-content: center;
+    background: cover;
+    padding: 50px 50px 50px 50px;
+}
+
+#banner-uppage img {
+    width: 100%;
+    height: 25 0px;
+    justify-content: center;
+    border-radius: 8px;
+    animation: neon 10s infinite ease;
+}
+
+.col h3 {
+    margin: 30px 0 50px 0;
+}
+
+.col h3, h4 {
+    margin-top: 30px;
+    text-align: left;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+li a {
+    color: var(--bg-color-lightBlue);
+    transition: .3s ease;
+}
+
+li a:hover {
+    color: var(--bg-color-darkBlue);
+}
+
+footer a {
+    color: var(--bg-color-lightBlue);
+    transition: .3s ease;
+}
+
+footer a:hover {
+    color: var(--bg-color-darkBlue);
+}
+
+.card {
+    border: none;
+    box-shadow: 5px 5px 15px #aaa;
+}
+
+@keyframes neon {
+    0% {
+        box-shadow: 10px 10px 50px var(--bg-color-lightBlue);
+    }
+
+    33% {
+        box-shadow: 10px 10px 50px var(--bg-color-darkBlue);
+    }
+
+    66% {
+        box-shadow: 10px 10px 50px var(--bg-color-pink);
+    }
+
+    100% {
+        box-shadow: 10px 10px 50px var(--bg-color-lightBlue);
+    }
+}
